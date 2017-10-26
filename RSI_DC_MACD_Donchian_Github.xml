@@ -1,4 +1,4 @@
-﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <block type="tick_analysis" id="DG*!rJ^#sS7O7wG@RTSY" x="-17" y="60">
     <statement name="TICKANALYSIS_STACK">
       <block type="controls_if" id="OdwkskdzS5ZX7!`Y;vo1">
