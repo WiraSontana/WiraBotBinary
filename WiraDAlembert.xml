@@ -583,7 +583,7 @@
                                             <mutation items="2"></mutation>
                                             <value name="ADD0">
                                               <block type="text" id="ox|AU:{^KZm`Bk=piPeZ">
-                                                <field name="TEXT">Stop Loss!! Total Loss :: -$</field>
+                                                <field name="TEXT">Stop Loss!! Total Loss :: </field>
                                               </block>
                                             </value>
                                             <value name="ADD1">
@@ -607,7 +607,7 @@
                                         <mutation items="2"></mutation>
                                         <value name="ADD0">
                                           <block type="text" id="+Fd!Q%aw=bq2)~qEmqt=">
-                                            <field name="TEXT">Target Profit reached!! Total Profit :: +$</field>
+                                            <field name="TEXT">Target Profit reached!! Total Profit :: </field>
                                           </block>
                                         </value>
                                         <value name="ADD1">
