@@ -1,4 +1,4 @@
-﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <block type="before_purchase" id="i-CIx.(Onm4?ihxzA}Y]" x="0" y="0">
     <statement name="BEFOREPURCHASE_STACK">
       <block type="controls_if" id="_~,eg8u[MY6%[se`En$L">
