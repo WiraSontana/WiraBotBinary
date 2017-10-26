@@ -1,4 +1,4 @@
-﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
+﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <block type="after_purchase" id="X[gun7Sx6Shn3kldC}mZ" x="0" y="0">
     <statement name="AFTERPURCHASE_STACK">
       <block type="controls_if" id="#=yO.C1rn7n]Zw*%E1AI">
