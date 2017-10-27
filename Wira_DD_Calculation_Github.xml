@@ -1432,27 +1432,131 @@
                                                                                                                               </block>
                                                                                                                             </statement>
                                                                                                                             <next>
-                                                                                                                              <block type="notify" id="*gALBgQe=eg?5KpmOhK(">
-                                                                                                                                <field name="NOTIFICATION_TYPE">info</field>
-                                                                                                                                <field name="NOTIFICATION_SOUND">silent</field>
-                                                                                                                                <value name="MESSAGE">
-                                                                                                                                  <shadow type="text" id="45=E$j*`Bq6O#%ot`Elq">
-                                                                                                                                    <field name="TEXT">abc</field>
-                                                                                                                                  </shadow>
-                                                                                                                                  <block type="text_join" id=",?@a6lKF]+FcntU`?{,z">
-                                                                                                                                    <mutation items="2"></mutation>
-                                                                                                                                    <value name="ADD0">
-                                                                                                                                      <block type="text" id="aMX)3RR(fC3nN,-6@@T`">
-                                                                                                                                        <field name="TEXT">Prediction :: </field>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <value name="ADD1">
-                                                                                                                                      <block type="variables_get" id="k#@_i/xZ;%i$|x!A7{`p">
+                                                                                                                              <block type="controls_if" id="xe[LqzStqHP?(h5EcS~%">
+                                                                                                                                <mutation else="1"></mutation>
+                                                                                                                                <value name="IF0">
+                                                                                                                                  <block type="logic_compare" id="#e5;npt8if%;XW~F@jyQ">
+                                                                                                                                    <field name="OP">EQ</field>
+                                                                                                                                    <value name="A">
+                                                                                                                                      <block type="variables_get" id="-4I*Ov[`2_yVI_f8Nf:Z">
                                                                                                                                         <field name="VAR">Prediction</field>
                                                                                                                                       </block>
                                                                                                                                     </value>
+                                                                                                                                    <value name="B">
+                                                                                                                                      <block type="last_digit" id="=E@(B+c8@u$Y`|enMEWZ"></block>
+                                                                                                                                    </value>
                                                                                                                                   </block>
                                                                                                                                 </value>
+                                                                                                                                <statement name="DO0">
+                                                                                                                                  <block type="notify" id="Mba7~pV^vGM[QSs]SilH">
+                                                                                                                                    <field name="NOTIFICATION_TYPE">error</field>
+                                                                                                                                    <field name="NOTIFICATION_SOUND">silent</field>
+                                                                                                                                    <value name="MESSAGE">
+                                                                                                                                      <shadow type="text" id="m+J.1)6l18]9VNol7Lx;">
+                                                                                                                                        <field name="TEXT">abc</field>
+                                                                                                                                      </shadow>
+                                                                                                                                      <block type="text_join" id="NiFcHAnAcQe@m@k01(`x">
+                                                                                                                                        <mutation items="2"></mutation>
+                                                                                                                                        <value name="ADD0">
+                                                                                                                                          <block type="text" id="TVGYxM3ld~tb4X8S/%M~">
+                                                                                                                                            <field name="TEXT">Last Digit :: </field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <value name="ADD1">
+                                                                                                                                          <block type="last_digit" id="r;kcfE*!oGCbt{*_pXRl"></block>
+                                                                                                                                        </value>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                  </block>
+                                                                                                                                </statement>
+                                                                                                                                <statement name="ELSE">
+                                                                                                                                  <block type="notify" id="./9{FiNXozk?,p{(,mbz">
+                                                                                                                                    <field name="NOTIFICATION_TYPE">info</field>
+                                                                                                                                    <field name="NOTIFICATION_SOUND">silent</field>
+                                                                                                                                    <value name="MESSAGE">
+                                                                                                                                      <shadow type="text" id="m+J.1)6l18]9VNol7Lx;">
+                                                                                                                                        <field name="TEXT">abc</field>
+                                                                                                                                      </shadow>
+                                                                                                                                      <block type="text_join" id="m-.uZ,U9M/:YUw}Zk64-">
+                                                                                                                                        <mutation items="2"></mutation>
+                                                                                                                                        <value name="ADD0">
+                                                                                                                                          <block type="text" id="bigD!U[:j{]pk|djt7R3">
+                                                                                                                                            <field name="TEXT">Last Digit :: </field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <value name="ADD1">
+                                                                                                                                          <block type="last_digit" id="*A`:=RQxPU$s8`/^[Qur"></block>
+                                                                                                                                        </value>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                  </block>
+                                                                                                                                </statement>
+                                                                                                                                <next>
+                                                                                                                                  <block type="controls_if" id="`G3(h$LEAfNP@%rGvl)C">
+                                                                                                                                    <mutation else="1"></mutation>
+                                                                                                                                    <value name="IF0">
+                                                                                                                                      <block type="logic_compare" id="0Ss/zAiOv7lZD]sl3~x9">
+                                                                                                                                        <field name="OP">EQ</field>
+                                                                                                                                        <value name="A">
+                                                                                                                                          <block type="variables_get" id="^wjV)oM(*m:P}e~TP1(t">
+                                                                                                                                            <field name="VAR">Prediction</field>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                        <value name="B">
+                                                                                                                                          <block type="last_digit" id="l%FN}pSc;d,$sg=vsVaW"></block>
+                                                                                                                                        </value>
+                                                                                                                                      </block>
+                                                                                                                                    </value>
+                                                                                                                                    <statement name="DO0">
+                                                                                                                                      <block type="notify" id="*gALBgQe=eg?5KpmOhK(">
+                                                                                                                                        <field name="NOTIFICATION_TYPE">error</field>
+                                                                                                                                        <field name="NOTIFICATION_SOUND">silent</field>
+                                                                                                                                        <value name="MESSAGE">
+                                                                                                                                          <shadow type="text" id="45=E$j*`Bq6O#%ot`Elq">
+                                                                                                                                            <field name="TEXT">abc</field>
+                                                                                                                                          </shadow>
+                                                                                                                                          <block type="text_join" id=",?@a6lKF]+FcntU`?{,z">
+                                                                                                                                            <mutation items="2"></mutation>
+                                                                                                                                            <value name="ADD0">
+                                                                                                                                              <block type="text" id="aMX)3RR(fC3nN,-6@@T`">
+                                                                                                                                                <field name="TEXT">Prediction :: </field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <value name="ADD1">
+                                                                                                                                              <block type="variables_get" id="k#@_i/xZ;%i$|x!A7{`p">
+                                                                                                                                                <field name="VAR">Prediction</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                      </block>
+                                                                                                                                    </statement>
+                                                                                                                                    <statement name="ELSE">
+                                                                                                                                      <block type="notify" id="/cuIiU$vW7|T)%cdiS;B">
+                                                                                                                                        <field name="NOTIFICATION_TYPE">info</field>
+                                                                                                                                        <field name="NOTIFICATION_SOUND">silent</field>
+                                                                                                                                        <value name="MESSAGE">
+                                                                                                                                          <shadow type="text" id="45=E$j*`Bq6O#%ot`Elq">
+                                                                                                                                            <field name="TEXT">abc</field>
+                                                                                                                                          </shadow>
+                                                                                                                                          <block type="text_join" id="cV*n(Dur=i@)@:*8Hrz7">
+                                                                                                                                            <mutation items="2"></mutation>
+                                                                                                                                            <value name="ADD0">
+                                                                                                                                              <block type="text" id="~,e.aR25kdkOJB0.r4WF">
+                                                                                                                                                <field name="TEXT">Prediction :: </field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                            <value name="ADD1">
+                                                                                                                                              <block type="variables_get" id="x6{s]_O+dgfDwHdH*CdA">
+                                                                                                                                                <field name="VAR">Prediction</field>
+                                                                                                                                              </block>
+                                                                                                                                            </value>
+                                                                                                                                          </block>
+                                                                                                                                        </value>
+                                                                                                                                      </block>
+                                                                                                                                    </statement>
+                                                                                                                                  </block>
+                                                                                                                                </next>
                                                                                                                               </block>
                                                                                                                             </next>
                                                                                                                           </block>
