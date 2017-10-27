@@ -1432,75 +1432,27 @@
                                                                                                                               </block>
                                                                                                                             </statement>
                                                                                                                             <next>
-                                                                                                                              <block type="notify" id="?/OWnQzbgm*n/?~3L!fN">
-                                                                                                                                <field name="NOTIFICATION_TYPE">success</field>
+                                                                                                                              <block type="notify" id="*gALBgQe=eg?5KpmOhK(">
+                                                                                                                                <field name="NOTIFICATION_TYPE">info</field>
                                                                                                                                 <field name="NOTIFICATION_SOUND">silent</field>
                                                                                                                                 <value name="MESSAGE">
-                                                                                                                                  <shadow type="text" id="7l0I5p!rcpBc$O./*o]:">
+                                                                                                                                  <shadow type="text" id="45=E$j*`Bq6O#%ot`Elq">
                                                                                                                                     <field name="TEXT">abc</field>
                                                                                                                                   </shadow>
-                                                                                                                                  <block type="text_join" id="+IQg:k;r%);oT+u.{r_+">
+                                                                                                                                  <block type="text_join" id=",?@a6lKF]+FcntU`?{,z">
                                                                                                                                     <mutation items="2"></mutation>
                                                                                                                                     <value name="ADD0">
-                                                                                                                                      <block type="text" id="+}S@q0;Rs]v+w:xQ*24X">
-                                                                                                                                        <field name="TEXT">Most Often Digit Appear :: </field>
+                                                                                                                                      <block type="text" id="aMX)3RR(fC3nN,-6@@T`">
+                                                                                                                                        <field name="TEXT">Prediction :: </field>
                                                                                                                                       </block>
                                                                                                                                     </value>
                                                                                                                                     <value name="ADD1">
-                                                                                                                                      <block type="variables_get" id="=UeVRw`e(^4~3g/^tMqw">
-                                                                                                                                        <field name="VAR">Most Often Digit Appear</field>
+                                                                                                                                      <block type="variables_get" id="k#@_i/xZ;%i$|x!A7{`p">
+                                                                                                                                        <field name="VAR">Prediction</field>
                                                                                                                                       </block>
                                                                                                                                     </value>
                                                                                                                                   </block>
                                                                                                                                 </value>
-                                                                                                                                <next>
-                                                                                                                                  <block type="notify" id="*gALBgQe=eg?5KpmOhK(">
-                                                                                                                                    <field name="NOTIFICATION_TYPE">info</field>
-                                                                                                                                    <field name="NOTIFICATION_SOUND">silent</field>
-                                                                                                                                    <value name="MESSAGE">
-                                                                                                                                      <shadow type="text" id="45=E$j*`Bq6O#%ot`Elq">
-                                                                                                                                        <field name="TEXT">abc</field>
-                                                                                                                                      </shadow>
-                                                                                                                                      <block type="text_join" id=",?@a6lKF]+FcntU`?{,z">
-                                                                                                                                        <mutation items="2"></mutation>
-                                                                                                                                        <value name="ADD0">
-                                                                                                                                          <block type="text" id="aMX)3RR(fC3nN,-6@@T`">
-                                                                                                                                            <field name="TEXT">Prediction :: </field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                        <value name="ADD1">
-                                                                                                                                          <block type="variables_get" id="k#@_i/xZ;%i$|x!A7{`p">
-                                                                                                                                            <field name="VAR">Prediction</field>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                      </block>
-                                                                                                                                    </value>
-                                                                                                                                    <next>
-                                                                                                                                      <block type="notify" id="a939GG9Jd`Xk#m/RqmSB">
-                                                                                                                                        <field name="NOTIFICATION_TYPE">error</field>
-                                                                                                                                        <field name="NOTIFICATION_SOUND">silent</field>
-                                                                                                                                        <value name="MESSAGE">
-                                                                                                                                          <shadow type="text" id="45=E$j*`Bq6O#%ot`Elq">
-                                                                                                                                            <field name="TEXT">abc</field>
-                                                                                                                                          </shadow>
-                                                                                                                                          <block type="text_join" id="%yW@bP4$YG.7Y@Kn(BwH">
-                                                                                                                                            <mutation items="2"></mutation>
-                                                                                                                                            <value name="ADD0">
-                                                                                                                                              <block type="text" id="89DG4g9?zl{P?ntk7s|x">
-                                                                                                                                                <field name="TEXT">Least Often Digit Appear :: </field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                            <value name="ADD1">
-                                                                                                                                              <block type="variables_get" id="8,C{^(jRI6Bzb%mKYiIi">
-                                                                                                                                                <field name="VAR">Least Often Digit Appear</field>
-                                                                                                                                              </block>
-                                                                                                                                            </value>
-                                                                                                                                          </block>
-                                                                                                                                        </value>
-                                                                                                                                      </block>
-                                                                                                                                    </next>
-                                                                                                                                  </block>
-                                                                                                                                </next>
                                                                                                                               </block>
                                                                                                                             </next>
                                                                                                                           </block>
