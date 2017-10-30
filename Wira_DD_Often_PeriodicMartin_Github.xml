@@ -29,7 +29,7 @@
                     <field name="TEXT">abc</field>
                   </shadow>
                   <block type="text" id="=6eX{Eblptb4BBlz7?U[">
-                    <field name="TEXT">Stake (Recommended 1/150 of your capital)</field>
+                    <field name="TEXT">Stake (Recommended 1/200 of your capital)</field>
                   </block>
                 </value>
               </block>
@@ -125,7 +125,7 @@
                                 <field name="TYPE">NUMBER</field>
                                 <value name="TEXT">
                                   <shadow type="text" id="(jhs9m_^1lO-,oXn5au)">
-                                    <field name="TEXT">Martin attempt after (x) ITM?</field>
+                                    <field name="TEXT">Martin attempt after (x) ITM? (Recommended 9) </field>
                                   </shadow>
                                 </value>
                               </block>
