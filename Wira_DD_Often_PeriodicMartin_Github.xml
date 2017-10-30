@@ -29,7 +29,7 @@
                     <field name="TEXT">abc</field>
                   </shadow>
                   <block type="text" id="=6eX{Eblptb4BBlz7?U[">
-                    <field name="TEXT">Stake (Recommended 1/100 of your capital)</field>
+                    <field name="TEXT">Stake (Recommended 1/150 of your capital)</field>
                   </block>
                 </value>
               </block>
