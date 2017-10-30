@@ -1,0 +1,453 @@
+﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="tick_analysis" id="!C2e|^6mu?3$y4)(J%aK">
+    <statement name="TICKANALYSIS_STACK">
+      <block type="variables_set" id="s]Q,6O$1Hzm(BVd_HuTl">
+        <field name="VAR">OP Even</field>
+        <value name="VALUE">
+          <block type="logic_null" id="55:/^B7l#ZJzKVEWFr2+"></block>
+        </value>
+        <next>
+          <block type="variables_set" id="XXF|@Q_+G7ysT-D-3qAO">
+            <field name="VAR">OP Odd</field>
+            <value name="VALUE">
+              <block type="logic_null" id="D/3t},*E)nd(X(W/xP6a"></block>
+            </value>
+            <next>
+              <block type="variables_set" id="iRd_aj4-gJbc/3+!;{C2">
+                <field name="VAR">Counted Even</field>
+                <value name="VALUE">
+                  <block type="logic_null" id="6v(0gF8{]aNeEm..18^4"></block>
+                </value>
+                <next>
+                  <block type="variables_set" id="}$2p0i)lyymm$R(lOcJC">
+                    <field name="VAR">Counted Odd</field>
+                    <value name="VALUE">
+                      <block type="logic_null" id=")/b]P|bu2.n}CU)lb,o}"></block>
+                    </value>
+                    <next>
+                      <block type="controls_for" id="n@GhX8#[=i8]|H]}CQRS">
+                        <field name="VAR">Even Odd Counting</field>
+                        <value name="FROM">
+                          <block type="math_number" id=":]);:[hd0afp[kCVK{R8">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <value name="TO">
+                          <block type="math_number" id="Ydh#W+P{%=B$5sxUyQ5$">
+                            <field name="NUM">5</field>
+                          </block>
+                        </value>
+                        <value name="BY">
+                          <block type="math_number" id="(%5o3}$^d[;SzNL]QD{P">
+                            <field name="NUM">1</field>
+                          </block>
+                        </value>
+                        <statement name="DO">
+                          <block type="controls_if" id="cAl0,M,pluNe}mVT|?f-">
+                            <value name="IF0">
+                              <block type="math_number_property" id="o8vn:%EunBIK3%T?gan5">
+                                <mutation divisor_input="false"></mutation>
+                                <field name="PROPERTY">EVEN</field>
+                                <value name="NUMBER_TO_CHECK">
+                                  <shadow type="math_number" id="j]i?zawh1`p{EQf0%|dM">
+                                    <field name="NUM">0</field>
+                                  </shadow>
+                                  <block type="lists_getIndex" id="f-7z|Sm~x5!4{):T`)5h">
+                                    <mutation statement="false" at="true"></mutation>
+                                    <field name="MODE">GET</field>
+                                    <field name="WHERE">FROM_END</field>
+                                    <value name="VALUE">
+                                      <block type="lastDigitList" id="QrNyLPnmt]$sQ,,S_xYV"></block>
+                                    </value>
+                                    <value name="AT">
+                                      <block type="variables_get" id="v3=?2mod_I(HEHga;*Gp">
+                                        <field name="VAR">Even Odd Counting</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="math_change" id="|f9_nrt*{L;eQ#6o6g@K">
+                                <field name="VAR">Counted Even</field>
+                                <value name="DELTA">
+                                  <shadow type="math_number" id="8gwVsCwX{hv`LF~wk=b7">
+                                    <field name="NUM">1</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="j$L#z|*/=zZgAA98igI?">
+                                <value name="IF0">
+                                  <block type="math_number_property" id="Bu[(xNas;V6wnBe%*!Q%">
+                                    <mutation divisor_input="false"></mutation>
+                                    <field name="PROPERTY">ODD</field>
+                                    <value name="NUMBER_TO_CHECK">
+                                      <shadow type="math_number" id="j]i?zawh1`p{EQf0%|dM">
+                                        <field name="NUM">0</field>
+                                      </shadow>
+                                      <block type="lists_getIndex" id="641g]RC,M=W^bQwTQ-z`">
+                                        <mutation statement="false" at="true"></mutation>
+                                        <field name="MODE">GET</field>
+                                        <field name="WHERE">FROM_END</field>
+                                        <value name="VALUE">
+                                          <block type="lastDigitList" id="-}[az}Kfs[?~M{,tdIYm"></block>
+                                        </value>
+                                        <value name="AT">
+                                          <block type="variables_get" id="yP9i7!we|Lco@#,0`Q#A">
+                                            <field name="VAR">Even Odd Counting</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="math_change" id="+$~^t2BW!-akP=N..Aeo">
+                                    <field name="VAR">Counted Odd</field>
+                                    <value name="DELTA">
+                                      <shadow type="math_number" id="XB~nTu1rE5ZeUCCG{Y@Z">
+                                        <field name="NUM">1</field>
+                                      </shadow>
+                                    </value>
+                                  </block>
+                                </statement>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="405K{QrG!RYQT7{kLP#+">
+                            <value name="IF0">
+                              <block type="logic_compare" id="#AhZl:/6?f.^xy8d11Q+">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="variables_get" id="sAZ*c4J*Zu]v6aNiBETs">
+                                    <field name="VAR">OP Decision :: Most Often</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="logic_boolean" id="rr}18AD8+^`a~[~8`SXC">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="controls_if" id="VFp_r/+6CgxY}f.uEwXW">
+                                <mutation else="1"></mutation>
+                                <value name="IF0">
+                                  <block type="logic_compare" id="5emL5~SS+ZSG3VC{U_/W">
+                                    <field name="OP">GT</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="#j}oI9YWzmvJO5KLpKUI">
+                                        <field name="VAR">Counted Even</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="variables_get" id="Jn]s2Ae?fqW10m{nK$V2">
+                                        <field name="VAR">Counted Odd</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="variables_set" id="Y2h`=3#kr-oXk)LpR7`u">
+                                    <field name="VAR">OP Even</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="xM7htO3!T[lE^P%S4l/9">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                                <statement name="ELSE">
+                                  <block type="variables_set" id="t+F`@):N`N9=%]w_dJwJ">
+                                    <field name="VAR">OP Odd</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="aZA3`W-ngl+B:Ts;oJ;6">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </statement>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="s4aYH:*gQ`:NpumHQqc]">
+                                <value name="IF0">
+                                  <block type="logic_compare" id="$LAKQ+%y25?N`q[~b;8:">
+                                    <field name="OP">EQ</field>
+                                    <value name="A">
+                                      <block type="variables_get" id="]!~Nuc`f,^umjZE0oN}g">
+                                        <field name="VAR">OP Decision :: Least Often</field>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="logic_boolean" id="`7V?}?pY0`P:x)N`jHG/">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="controls_if" id="cu57#i)!!PkDx#%#;7)U">
+                                    <mutation else="1"></mutation>
+                                    <value name="IF0">
+                                      <block type="logic_compare" id="B3i!gv}Y^:l*mDw?ahQ)">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="variables_get" id="[]l0MN)~|Q0vJN_zdh{]">
+                                            <field name="VAR">Counted Even</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="variables_get" id="9kAL[er*16JV+5J8%~{j">
+                                            <field name="VAR">Counted Odd</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="variables_set" id="rCR:RlpG-+j2CV!P-7![">
+                                        <field name="VAR">OP Even</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id="C?l+*ymw4K+Czt@qN0sL">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                    <statement name="ELSE">
+                                      <block type="variables_set" id="jb*D7Tu:W;IYN,64^eo=">
+                                        <field name="VAR">OP Odd</field>
+                                        <value name="VALUE">
+                                          <block type="logic_boolean" id=",G5~e]w=@Bl+R{6.P0xu">
+                                            <field name="BOOL">TRUE</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="notify" id="Kew3aNg~:P~p6P2M]KFf">
+                                    <field name="NOTIFICATION_TYPE">info</field>
+                                    <field name="NOTIFICATION_SOUND">silent</field>
+                                    <value name="MESSAGE">
+                                      <shadow type="text" id="l?HObx:u!=1yLQ,)uMbO">
+                                        <field name="TEXT">abc</field>
+                                      </shadow>
+                                      <block type="text_join" id="c:PIj?yq{K!VPkGig`y{">
+                                        <mutation items="3"></mutation>
+                                        <value name="ADD0">
+                                          <block type="text" id="iJl9e`X2I.)TM%:6?7`Y">
+                                            <field name="TEXT">Odd :: </field>
+                                          </block>
+                                        </value>
+                                        <value name="ADD1">
+                                          <block type="math_round" id="S^Eo-+}};-u@sH_X`EaL">
+                                            <field name="OP">ROUND</field>
+                                            <value name="NUM">
+                                              <shadow type="math_number" id="XI/-Ai/.HW3H6a(U+J9Q">
+                                                <field name="NUM">3.1</field>
+                                              </shadow>
+                                              <block type="math_arithmetic" id="|bz2ea+|YhPDVGf#Ff?:">
+                                                <field name="OP">MULTIPLY</field>
+                                                <value name="A">
+                                                  <shadow type="math_number" id="|o{5/KXf=i^*F9a2z]TP">
+                                                    <field name="NUM">1</field>
+                                                  </shadow>
+                                                  <block type="math_arithmetic" id="G7~~*?j$D2=9-ajMPjz]">
+                                                    <field name="OP">DIVIDE</field>
+                                                    <value name="A">
+                                                      <shadow type="math_number" id="I3zI@9z)h0XF*bmHTI-#">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="variables_get" id="C-|)IAY0pBky{U%5r$5:">
+                                                        <field name="VAR">Counted Odd</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <shadow type="math_number" id="b-2}R5`G[d~-a28F=aB$">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_arithmetic" id=":=b!{WUt_xMh5uX$l.I+">
+                                                        <field name="OP">ADD</field>
+                                                        <value name="A">
+                                                          <shadow type="math_number" id="3+:.#RYI5i5vA,ulm9t_">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="C6g!y]6w9}(#sq4k[KZ9">
+                                                            <field name="VAR">Counted Odd</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <shadow type="math_number" id="x^yZsTMS%!Sa`$eM;]PP">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="-C]VuR6Wcj`y1)@T]9W)">
+                                                            <field name="VAR">Counted Even</field>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                                <value name="B">
+                                                  <shadow type="math_number" id="H(@[DD8V!^y(:qbkbEgS">
+                                                    <field name="NUM">100</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="ADD2">
+                                          <block type="text" id="4F[^7xMsx34}x^uNtb^W">
+                                            <field name="TEXT">%</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="notify" id="r9ztsM9{17U}[$O#=x-8">
+                                        <field name="NOTIFICATION_TYPE">info</field>
+                                        <field name="NOTIFICATION_SOUND">silent</field>
+                                        <value name="MESSAGE">
+                                          <shadow type="text" id="l?HObx:u!=1yLQ,)uMbO">
+                                            <field name="TEXT">abc</field>
+                                          </shadow>
+                                          <block type="text_join" id="l,d(i84IT84?LQ+fl0.(">
+                                            <mutation items="3"></mutation>
+                                            <value name="ADD0">
+                                              <block type="text" id="%M(oIrv;oRADV7opdlff">
+                                                <field name="TEXT">Even :: </field>
+                                              </block>
+                                            </value>
+                                            <value name="ADD1">
+                                              <block type="math_round" id=":5K]g}25I7Q5Ig^tw*]!">
+                                                <field name="OP">ROUND</field>
+                                                <value name="NUM">
+                                                  <shadow type="math_number" id="Ez5|oXNUp+ib#2;s.4Cc">
+                                                    <field name="NUM">3.1</field>
+                                                  </shadow>
+                                                  <block type="math_arithmetic" id="%rA+.ix+`cn9RiWuct3#">
+                                                    <field name="OP">MULTIPLY</field>
+                                                    <value name="A">
+                                                      <shadow type="math_number" id="|o{5/KXf=i^*F9a2z]TP">
+                                                        <field name="NUM">1</field>
+                                                      </shadow>
+                                                      <block type="math_arithmetic" id="rIX=CBta4uCm[IC~b^wi">
+                                                        <field name="OP">DIVIDE</field>
+                                                        <value name="A">
+                                                          <shadow type="math_number" id="I3zI@9z)h0XF*bmHTI-#">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                          <block type="variables_get" id="]$tX=x{sS_mG4kWTB1-a">
+                                                            <field name="VAR">Counted Even</field>
+                                                          </block>
+                                                        </value>
+                                                        <value name="B">
+                                                          <shadow type="math_number" id="b-2}R5`G[d~-a28F=aB$">
+                                                            <field name="NUM">1</field>
+                                                          </shadow>
+                                                          <block type="math_arithmetic" id="$rjrCt~JdT2(`7Dr$[4;">
+                                                            <field name="OP">ADD</field>
+                                                            <value name="A">
+                                                              <shadow type="math_number" id="3+:.#RYI5i5vA,ulm9t_">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="e%!?F7h|OMFICArI/_xJ">
+                                                                <field name="VAR">Counted Odd</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <shadow type="math_number" id="x^yZsTMS%!Sa`$eM;]PP">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="n9HxX}ajs(Yf?VR2~`1%">
+                                                                <field name="VAR">Counted Even</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </value>
+                                                    <value name="B">
+                                                      <shadow type="math_number" id="7hYIJ?CG5Cz(HIa.):JF">
+                                                        <field name="NUM">100</field>
+                                                      </shadow>
+                                                    </value>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <value name="ADD2">
+                                              <block type="text" id="I_v]C+bHP`KNug}{A}E$">
+                                                <field name="TEXT">%</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <next>
+                                          <block type="controls_if" id="njsG]*QZ`hufS_,^F8Kj">
+                                            <mutation else="1"></mutation>
+                                            <value name="IF0">
+                                              <block type="math_number_property" id="e%$Q${e(+DFlO`,5qrdM">
+                                                <mutation divisor_input="false"></mutation>
+                                                <field name="PROPERTY">EVEN</field>
+                                                <value name="NUMBER_TO_CHECK">
+                                                  <shadow type="math_number" id="d0?:I4nprH)R.NyD%a6*">
+                                                    <field name="NUM">0</field>
+                                                  </shadow>
+                                                  <block type="last_digit" id="jltD!$0.=cSbTI20TDOY"></block>
+                                                </value>
+                                              </block>
+                                            </value>
+                                            <statement name="DO0">
+                                              <block type="notify" id="@:9*K{{.vBZMh)M]fbEe">
+                                                <field name="NOTIFICATION_TYPE">info</field>
+                                                <field name="NOTIFICATION_SOUND">silent</field>
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="l?HObx:u!=1yLQ,)uMbO">
+                                                    <field name="TEXT">Last Tick :: Even</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                            <statement name="ELSE">
+                                              <block type="notify" id="bX#HJqY3g?xCtIf-pzAP">
+                                                <field name="NOTIFICATION_TYPE">info</field>
+                                                <field name="NOTIFICATION_SOUND">silent</field>
+                                                <value name="MESSAGE">
+                                                  <shadow type="text" id="bWR]AXuAud^,Q1UXjZ2]">
+                                                    <field name="TEXT">Last Tick :: Odd</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </statement>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
