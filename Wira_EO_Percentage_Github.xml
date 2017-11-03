@@ -34,12 +34,12 @@
                         </value>
                         <value name="TO">
                           <block type="math_number" id="Ydh#W+P{%=B$5sxUyQ5$">
-                            <field name="NUM">30</field>
+                            <field name="NUM">5</field>
                           </block>
                         </value>
                         <value name="BY">
                           <block type="math_number" id="(%5o3}$^d[;SzNL]QD{P">
-                            <field name="NUM">6</field>
+                            <field name="NUM">1</field>
                           </block>
                         </value>
                         <statement name="DO">
