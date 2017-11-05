@@ -102,7 +102,7 @@
                 <field name="VAR">Last Digit Length Sample</field>
                 <value name="VALUE">
                   <block type="math_number" id="+QdvGEcfGQ#{Z,}XM=]7">
-                    <field name="NUM">25</field>
+                    <field name="NUM">10</field>
                   </block>
                 </value>
                 <next>
