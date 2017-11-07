@@ -1,4 +1,4 @@
-﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
   <block type="procedures_defreturn" id="qq2xGirc*Byb/P/HE^]H" x="0" y="0">
     <field name="NAME">Wira's Stake</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
@@ -730,23 +730,13 @@
                                               </block>
                                             </value>
                                             <statement name="DO0">
-                                              <block type="variables_set" id="i|PL9Vg?DIoI%=7:-Mu3">
+                                              <block type="variables_set" id="[~zNjjP-uc.U`p~/%LPx">
                                                 <field name="VAR">Martin Session</field>
                                                 <value name="VALUE">
-                                                  <block type="logic_boolean" id="HZ:vJhYCbr1c!izyrD9B">
+                                                  <block type="logic_boolean" id="UY_1hK[Tfur;Bkt%ma:i">
                                                     <field name="BOOL">FALSE</field>
                                                   </block>
                                                 </value>
-                                                <next>
-                                                  <block type="variables_set" id="[~zNjjP-uc.U`p~/%LPx">
-                                                    <field name="VAR">Martin Session</field>
-                                                    <value name="VALUE">
-                                                      <block type="logic_boolean" id="UY_1hK[Tfur;Bkt%ma:i">
-                                                        <field name="BOOL">TRUE</field>
-                                                      </block>
-                                                    </value>
-                                                  </block>
-                                                </next>
                                               </block>
                                             </statement>
                                           </block>
