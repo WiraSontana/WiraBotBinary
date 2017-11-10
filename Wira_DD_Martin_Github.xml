@@ -730,13 +730,57 @@
                                               </block>
                                             </value>
                                             <statement name="DO0">
-                                              <block type="variables_set" id="[~zNjjP-uc.U`p~/%LPx">
-                                                <field name="VAR">Martin Session</field>
+                                              <block type="variables_set" id="0TZ~~n{VHqZ_{6l0sd!q">
+                                                <field name="VAR">Loss Record</field>
                                                 <value name="VALUE">
-                                                  <block type="logic_boolean" id="UY_1hK[Tfur;Bkt%ma:i">
-                                                    <field name="BOOL">FALSE</field>
+                                                  <block type="math_number" id="|duXT4u$enF/?;L+NON;">
+                                                    <field name="NUM">0</field>
                                                   </block>
                                                 </value>
+                                                <next>
+                                                  <block type="variables_set" id="[~zNjjP-uc.U`p~/%LPx">
+                                                    <field name="VAR">Martin Session</field>
+                                                    <value name="VALUE">
+                                                      <block type="logic_boolean" id="UY_1hK[Tfur;Bkt%ma:i">
+                                                        <field name="BOOL">FALSE</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="variables_set" id="p8iPQ2J3_!O;}kjZ0~=+">
+                                                        <field name="VAR">Loss Record</field>
+                                                        <value name="VALUE">
+                                                          <block type="math_arithmetic" id="sDIqWGG)|.ZdOgf_tmZ/">
+                                                            <field name="OP">ADD</field>
+                                                            <value name="A">
+                                                              <shadow type="math_number" id="/.DH+7qfxn{hy3kQv7bw">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="variables_get" id="`7-cXzG}k1Eja_wB[i6=">
+                                                                <field name="VAR">Loss Record</field>
+                                                              </block>
+                                                            </value>
+                                                            <value name="B">
+                                                              <shadow type="math_number" id="%yL5px-MF8ZPDhw_vmx_">
+                                                                <field name="NUM">1</field>
+                                                              </shadow>
+                                                              <block type="math_single" id="iLA~b`{|]I7p(v=dvDc)">
+                                                                <field name="OP">ABS</field>
+                                                                <value name="NUM">
+                                                                  <shadow type="math_number" id="GleSn`9j7Cm7/dqg}FIA">
+                                                                    <field name="NUM">9</field>
+                                                                  </shadow>
+                                                                  <block type="variables_get" id="-|`EzXpb):Rx#4]YwgC_">
+                                                                    <field name="VAR">Profit</field>
+                                                                  </block>
+                                                                </value>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
                                               </block>
                                             </statement>
                                           </block>
@@ -970,13 +1014,29 @@
                                       </block>
                                     </value>
                                     <statement name="DO0">
-                                      <block type="variables_set" id="-6q{@QE7BWWFM;/hAC3k">
-                                        <field name="VAR">Stake</field>
-                                        <value name="VALUE">
-                                          <block type="variables_get" id="{F3wNyFdsYx9JFdjZAc)">
-                                            <field name="VAR">Start Stake</field>
+                                      <block type="notify" id="~Sg~yR$4xV:5{u9$T#0)">
+                                        <field name="NOTIFICATION_TYPE">error</field>
+                                        <field name="NOTIFICATION_SOUND">severe-error</field>
+                                        <value name="MESSAGE">
+                                          <block type="text_join" id="6~Kn,Dk#R*sL1o^36K[V">
+                                            <mutation items="1"></mutation>
+                                            <value name="ADD0">
+                                              <block type="text" id="+8F`%8?7qMi*YA[nR%ve">
+                                                <field name="TEXT">Insufficient Balance, Cancel Martin!</field>
+                                              </block>
+                                            </value>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="variables_set" id="-6q{@QE7BWWFM;/hAC3k">
+                                            <field name="VAR">Stake</field>
+                                            <value name="VALUE">
+                                              <block type="variables_get" id="{F3wNyFdsYx9JFdjZAc)">
+                                                <field name="VAR">Start Stake</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </next>
                                       </block>
                                     </statement>
                                     <next>
