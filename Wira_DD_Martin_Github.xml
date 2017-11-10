@@ -1014,29 +1014,78 @@
                                       </block>
                                     </value>
                                     <statement name="DO0">
-                                      <block type="notify" id="~Sg~yR$4xV:5{u9$T#0)">
-                                        <field name="NOTIFICATION_TYPE">error</field>
-                                        <field name="NOTIFICATION_SOUND">severe-error</field>
-                                        <value name="MESSAGE">
-                                          <block type="text_join" id="6~Kn,Dk#R*sL1o^36K[V">
-                                            <mutation items="1"></mutation>
-                                            <value name="ADD0">
-                                              <block type="text" id="+8F`%8?7qMi*YA[nR%ve">
-                                                <field name="TEXT">Insufficient Balance, Cancel Martin!</field>
+                                      <block type="controls_if" id="+Ws3ol{q)xz9-#x,08b#">
+                                        <value name="IF0">
+                                          <block type="logic_compare" id="$63w?PimQ97Wum7f}Usr">
+                                            <field name="OP">EQ</field>
+                                            <value name="A">
+                                              <block type="variables_get" id="qRcWr3_+Pbw[QT?qCG%:">
+                                                <field name="VAR">Martin Session</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="logic_boolean" id="G,59$CBt3dv=5Uf*HE`r">
+                                                <field name="BOOL">TRUE</field>
                                               </block>
                                             </value>
                                           </block>
                                         </value>
-                                        <next>
-                                          <block type="variables_set" id="-6q{@QE7BWWFM;/hAC3k">
-                                            <field name="VAR">Stake</field>
+                                        <statement name="DO0">
+                                          <block type="variables_set" id="j3QE~=({=cd#/tvs?8Ak">
+                                            <field name="VAR">Martin Session</field>
                                             <value name="VALUE">
-                                              <block type="variables_get" id="{F3wNyFdsYx9JFdjZAc)">
-                                                <field name="VAR">Start Stake</field>
+                                              <block type="logic_boolean" id="$R+#2gT4R;A)]ga)#Fde">
+                                                <field name="BOOL">FALSE</field>
                                               </block>
                                             </value>
+                                            <next>
+                                              <block type="variables_set" id="]!.pY|+4w9ys;|EYpe|f">
+                                                <field name="VAR">Loss Streak</field>
+                                                <value name="VALUE">
+                                                  <block type="math_number" id="qmvf|b/fp5aNaI3P+HGk">
+                                                    <field name="NUM">0</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="variables_set" id="l4u^.Xsgyl=M[K$bdMvd">
+                                                    <field name="VAR">Loss Record</field>
+                                                    <value name="VALUE">
+                                                      <block type="math_number" id=";,U7X=($Z{NT*pXZ|x}^">
+                                                        <field name="NUM">0</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="notify" id="~Sg~yR$4xV:5{u9$T#0)">
+                                                        <field name="NOTIFICATION_TYPE">error</field>
+                                                        <field name="NOTIFICATION_SOUND">severe-error</field>
+                                                        <value name="MESSAGE">
+                                                          <block type="text_join" id="6~Kn,Dk#R*sL1o^36K[V">
+                                                            <mutation items="1"></mutation>
+                                                            <value name="ADD0">
+                                                              <block type="text" id="+8F`%8?7qMi*YA[nR%ve">
+                                                                <field name="TEXT">Insufficient Balance, Cancel Martin!</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="variables_set" id="-6q{@QE7BWWFM;/hAC3k">
+                                                            <field name="VAR">Stake</field>
+                                                            <value name="VALUE">
+                                                              <block type="variables_get" id="{F3wNyFdsYx9JFdjZAc)">
+                                                                <field name="VAR">Start Stake</field>
+                                                              </block>
+                                                            </value>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
+                                            </next>
                                           </block>
-                                        </next>
+                                        </statement>
                                       </block>
                                     </statement>
                                     <next>
