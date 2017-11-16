@@ -1,4 +1,4 @@
-﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+﻿<xml xmlns="http://www.w3.org/1999/xhtml" collection="false">
   <block type="procedures_defnoreturn" id=";CgKP?Dp${6``TY=EakK" collapsed="true" x="0" y="208">
     <field name="NAME">Indicator Notify</field>
     <comment pinned="false" h="80" w="160">Describe this function...</comment>
